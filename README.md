@@ -8,7 +8,7 @@ Adopt-a-Dog is a web app that allows users to browse a list of adoptable dogs an
 Installation
 Clone the repository to your local machine:
 Copy code
-git clone https://github.com/[USERNAME]/adopt-a-dog.git
+git clone https://github.com/Levonalp/DjangoSqlreact---front-end
 
 Navigate to the directory:
 Copy code
@@ -29,5 +29,3 @@ React Loader Spinner - Package for displaying loading indicators in React
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-Heroku Front-end link:
-https://urldogshowback.herokuapp.com/
