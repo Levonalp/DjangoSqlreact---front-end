@@ -16,7 +16,7 @@ const App = () => {
   const getDog = () => {
     setIsFetchingDog(true);
     axios
-      .get("http://127.0.0.1:8000/api/dog")
+      .get("https://djangosql.onrender.com/api/dog")
       .then(
         (response) => {
           setDog(response.data);
@@ -30,10 +30,12 @@ const App = () => {
       });
   };
   const handleCreate = (addPet) => {
-    axios.post("http://127.0.0.1:8000/api/dog", addPet).then((response) => {
-      console.log(response);
-      getDog();
-    });
+    axios
+      .post("https://djangosql.onrender.com/api/dog", addPet)
+      .then((response) => {
+        console.log(response);
+        getDog();
+      });
   };
   const handleDelete = (deleteDog) => {
     confirmAlert({
@@ -44,7 +46,7 @@ const App = () => {
           label: "Yes",
           onClick: () => {
             axios
-              .delete("http://127.0.0.1:8000/api/dog/" + deleteDog.id)
+              .delete("https://djangosql.onrender.com/api/dog/" + deleteDog.id)
               .then((response) => {
                 setDog(dog.filter((dog) => dog.id !== deleteDog.id));
               });
@@ -60,7 +62,7 @@ const App = () => {
   const handleUpdate = (editDog) => {
     console.log(editDog);
     axios
-      .put("http://127.0.0.1:8000/api/dog/" + editDog.id, editDog)
+      .put("https://djangosql.onrender.com/api/dog/" + editDog.id, editDog)
       .then((response) => {
         getDog();
       });
