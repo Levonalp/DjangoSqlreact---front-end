@@ -3,7 +3,7 @@
 ## Introduction
 
 This React application is designed to manage a list of dogs, providing functionalities such as fetching, creating, updating, and deleting dog entries. The application interacts with an external API to perform these operations.
-..
+.
 ## Installation
 
 To set up this project locally, follow these steps:
