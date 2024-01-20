@@ -24,7 +24,7 @@ To set up this project locally, follow these steps:
 ### Dog Creation
 
 - Allows the creation of new dog entries through a form.
-- Submits new dog data to the API..
+- Submits new dog data to the API.
 
 ### Dog Deletion
 
